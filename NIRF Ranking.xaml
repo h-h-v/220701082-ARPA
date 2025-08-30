@@ -1,0 +1,142 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="NIRF_Ranking" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="NIRF_Ranking_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="NIRF_Ranking" sap:VirtualizedContainerService.HintSize="796.8000000000001,655.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome MoE, National Institute Ranking Framew" sap:VirtualizedContainerService.HintSize="449.6,632" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e47c75b6-c545-4d5c-8d4f-56290181cbad" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,392" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name' ReferenceIdx='0' Name='Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='City' ReferenceIdx='1' Name='City'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='State' ReferenceIdx='2' Name='State'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Name' attr='fulltext' /&gt;&lt;column name='City' attr='fulltext' /&gt;&lt;column name='State' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="100" ScopeIdentifier="e47c75b6-c545-4d5c-8d4f-56290181cbad" Version="V4">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="nirfindia.org/Rankings/2024/EngineeringRankingALL.html" CVScreenId="d5625434-885b-4129-9e70-ccb3db869ff3" CvElementArea="1585, 797, 21, 21" CvType="ArrowButton" DesignTimeRectangle="1574, 784, 43, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Next' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next' tag='BUTTON' type='button' class='dt-paging-button next' aaname='›' check:innerText='›' /&gt;" Guid="8e3a2f1f-9d3a-427e-a6f6-522bf74420e3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MoE, National Institute Ranking Framework (NIRF)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.nirfindia.org/Rankings/2024/EngineeringRankingALL.html" DesignTimeRectangle="254, 604, 1411, 4675" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='tblAllInstitutes' tag='TABLE' /&gt;" Guid="d85a3704-9e5d-4f8c-b5da-89ff5e494c26" InformativeScreenshot="01936e2887d1d9a74908036aff41fd02.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MoE, National Institute Ranking Framework (NIRF)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="382.4,140.8" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="NIRFRanking.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="3ljkmD2udUmyecHhSp9Z_g" IconBase64="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" InformativeScreenshot="f3784ae6dd6876ef973589bc84b79898.jpg" Reference="LxZKEV7NIEug47CnoZEFKA/ptXWYvgoQE6GZUK8SFDyfA" Selector="&lt;html app='chrome.exe' title='MoE, National Institute Ranking Framework (NIRF)' /&gt;" Title="MoE, National Institute Ranking Framework (NIRF)" Url="https://www.nirfindia.org/Rankings/2024/EngineeringRankingALL.html" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
