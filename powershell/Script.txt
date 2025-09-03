@@ -1,0 +1,2 @@
+New-Item -Path . -Name "REC1.txt" -ItemType "file" -value "F1"
+New-Item -Path . -Name "REC2.txt" -ItemType "file" -value "F2"
